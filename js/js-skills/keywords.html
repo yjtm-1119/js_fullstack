@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function test(a,b) {
+            if (!a || !b) {
+                return;
+            }
+            for (let i = 0; i < 10; i++) {
+                if (i > 5) {  
+                    // return;终止  输出undefined
+                    // break; 跳出整个循环  继续做其他的事输出test
+                    //continue; 跳出本次循环  本次循环的 console.log(i)  不执行了
+                 }
+                console.log(i);
+            }
+            return 'test';
+        }
+        let res =test(1,2);
+        console.log(res);
+        console.log('---------------------');
+        
+        
+    </script>
+</body>
+
+</html>
